@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País WM</title>
+    <style>
+        body {
+            font: normal 13pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificação de Nacionalidade</h1>
+    País de origem: <input type="text" name="txtpaís" id="txtpaís"><br>
+    País onde mora: <input type="text" name="txtpaísmora" id="txtpaísmora"><br>
+    <input type="button" value="Verificar" onclick="calcular()"><br>
+    <div id="res"></div> 
+    <script>
+        function calcular() {
+            var txtpaís = window.document.getElementById('txtpaís').value.toLowerCase();
+            var txtpaísmora = window.document.getElementById('txtpaísmora').value.toLowerCase();
+            var res = window.document.getElementById('res');
+
+            if (txtpaís == 'brasil' && txtpaísmora == 'brasil') {
+                res.innerHTML = `<p> Você é <strong> BRASILEIRO </strong></p>`;
+            } else {
+                res.innerHTML = `<p> Você é <strong> ESTRANGEIRO </strong> </p>`;
+                window.alert('BUMM');
+            }
+        }
+    </script>
+</body>
+</html>
