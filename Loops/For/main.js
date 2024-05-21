@@ -27,7 +27,7 @@ for (n in num) {
 
 console.log('\n')
 
-// for n -> não precisa acessar o array pelo índice
+// for of -> não precisa acessar o array pelo índice
 // pega os elementos
 
 for (n of num) {
