@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Boas-Vindas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    
+        button { 
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: rgb(209, 209, 209); 
+            color: rgb(0, 0, 0); 
+            font-size: 12pt; 
+            padding: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Boas vindas</h1>
+    <button onclick="desafio()">Inicie o desafio</button>
+    <script>
+        function desafio() {
+
+            let name = window.prompt("What is your name? ")
+            let age = window.prompt(`Hello, ${name}! How old are you?`)
+            window.alert(`I just met ${name} who is ${age} years old`)
+        }
+    
+    </script>
+</body>
+</html>
