@@ -7,7 +7,7 @@ const dc6=document.getElementById("c6")
 
 const arrayElementos=[dc1,dc2,dc3,dc4,dc5,dc6]
 
-// tagname só funciona com spread
+// retorna uma coleção
 const colecaoHTML=[...document.getElementsByTagName("div")]
 
 console.log(colecaoHTML)
