@@ -53,3 +53,18 @@ const soma = (v1,v2,v3)=> {
 
 let valores = [1,3,5,7] // vai pegar sempre os 3 primeiros
 console.log(soma(...valores))
+
+// Operador Bitwase -> números binários
+
+let n11, n2, res, res1, res2= 0
+n1 = 13
+n2 = 19
+res = n11 ^ n2 // ^ == ou exclusivo
+res1 = n11 << 1 // deslocamento em um bit para a esquerda
+res2 = n11 >> 1 // deslocamento em um bit para a esquerda
+
+console.log(n11 & n2) // Se tiver 2 1 retornará 1 'and,e'
+console.log(n11 | n2) // Onde tiver um retornará 1 'or,ou'
+console.log(res) // Equivalencia, onde tiver 1, retornará 1
+console.log(res1) // Dobra o valor
+console.log(res2) // Divide o valor em 2

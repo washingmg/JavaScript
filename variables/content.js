@@ -11,4 +11,3 @@ function teste(){
     }
     console.log("Dentro do IF do teste: " + nome)
 } teste()
-
